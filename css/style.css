@@ -1,0 +1,406 @@
+/*css reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+:root{
+       --blue: hsl(233, 26%, 24%);
+       --cyan:hsl(192, 70%, 51%);
+       --lime: hsl(136, 65%, 51%);
+       --white:hsl(0, 0%, 100%);
+       --Bright:hsl(192, 70%, 51%);
+       
+       --grayish: hsl(233, 8%, 62%);
+         --grey: hsl(220, 16%, 96%);
+         --gray: hsl(0, 0%, 98%);
+        --whity: hsl(0, 0%, 100%);
+}
+
+body{
+    display: grid;
+    grid-template-columns: 1fr;
+   
+}
+.main-container{
+    width: 1440px;  
+    box-sizing: border-box;
+}
+.nav{
+    grid-row-start: 1;
+    margin-top: 20px;
+    grid-template-columns: 3fr 4fr 3fr;
+    display: grid;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    height: 70px;
+
+}
+.easybank-brand{
+    margin-top: 17px;
+    padding-left: 70px;
+    grid-column-start: 1;
+    margin-left: 100px;
+    font-weight: bold;
+}
+.nav ul{
+    margin-top: 15px;
+    display: flex;
+    grid-column-start: 2;
+    list-style-type: none;
+    margin-left: 80px;
+    
+    
+}
+.nav ul li a{
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px; 
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+   
+  
+}
+
+   
+.nav-button{
+    padding-top: 5px;
+    grid-column-start: 3;
+    margin-left: 20px;
+}
+  
+
+.request-invite-btn{
+    font-family: 'Montserrat', sans-serif;
+    background-image: linear-gradient(to left,#79cfcf, #32CD32);  
+    border-radius: 19px;
+    padding-right: 40px;
+    padding-left: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-color: transparent;
+    font-weight: bold;
+    color: white;
+
+}
+.request-invite-btn:hover{
+    cursor: pointer;
+}
+.intro{
+    background: var(--gray);
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 5fr 5fr;
+}
+.next-gen-bank{
+    grid-column-start: 1;
+    margin-left: 170px;
+    margin-top: 300px;
+    font-family: 'Montserrat', sans-serif;
+}
+.next-gen-bank-p1{
+    font-size: 40px;
+    font-weight: bold;
+    margin-right: 50px;
+}
+
+.next-gen-bg-img{
+    grid-column-start: 2;
+    height: 750px;
+    position: relative;
+    background: url("bg-intro-desktop.svg");
+
+}
+.next-gen-front-img{
+    grid-column-start: 2;
+    position: absolute;
+    margin-left: 730px;
+}
+
+.next-gen-bank-btn{
+    margin-top: 20px;
+    font-family: 'Montserrat', sans-serif;
+    background-image: linear-gradient(to left,#79cfcf, #32CD32);
+    
+    border-radius: 19px;
+    padding-right: 40px;
+    padding-left: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-color: transparent;
+    font-weight: bold;
+    color: white;
+}
+.next-gen-bank-btn:hover{
+    cursor: pointer;
+
+}
+.why-choose-easybank{  
+    background: white;
+    box-sizing: border-box;
+    margin-top: 30px;
+    grid-template-rows: 1fr 1fr;
+    grid-row-start: 3;
+}
+.why-choose-easybank-h2{
+    margin-top: 70px;
+    margin-left: 170px;
+    font-family: 'Montserrat', sans-serif;
+}
+.why-choose-easybank-p1{
+    margin-top: 30px;
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 170px;
+
+}
+.img-para{
+    margin-top: 100px;
+    display: flex;
+    margin-left: 120px;
+}
+.why-choose-easybank-img{
+    display: grid;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+.why-choose-easybank-img1{
+    display: grid;
+
+}
+.why-choose-easybank-h4{
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 30px;
+    font-weight: bold;
+}
+.why-choose-easybank-p2{
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 30px;
+    
+}
+.latest-articles{
+    background:hsl(0, 0%, 98%);
+    box-sizing: border-box;
+    grid-row-start: 4;
+    display: grid;
+    margin-top: 30px;   
+    padding-bottom: 40px;
+}
+
+.latest-h2{
+    margin-top: 40px;
+    font-family: 'Montserrat', sans-serif; 
+    margin-left: 160px;
+}
+.card-container1{
+    display: flex;
+    margin-left: 140px;
+}
+.card-container{
+    border-radius: 10px;
+    background: white;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 30px;
+    margin-top: 60px;
+    box-sizing: border-box;    
+  
+}
+.card-img{
+    width: 280px;
+    height: 200px;
+}
+.card-para1{
+    font-family: 'Montserrat', sans-serif; 
+    font-size: 11px;
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+.card-para2{
+    margin-left: 30px;
+    margin-top: 30px;
+    font-family: 'Montserrat', sans-serif; 
+    font-weight: bolder;
+}
+
+.card-para2:hover{
+    color: var(--lime);
+    cursor: pointer;
+}
+.card-para3{
+    margin-left: 30px;
+    margin-top: 30px;
+    font-size: 13px;
+    font-family: 'Montserrat', sans-serif; 
+    padding-bottom: 30px;
+}
+
+.footer{
+    display: grid;
+    grid-row-start: 5;
+    grid-template-columns: 3fr 1fr 1fr 5fr;
+    background: var(--blue);
+    height: 200px;
+}
+
+.footer-brand{
+    grid-column-start: 1;
+    padding-top: 35px;
+    
+}
+.footer-brand-span{
+    
+    font-weight: bold;
+    font-size: 22px;
+    color: white;
+    margin-left: 170px;
+    
+}
+.footer-icons{
+    padding-left: 170px;
+    padding-top: 80px;
+}
+.aboutus{
+    grid-column-start: 2;
+    margin-top: 37px;
+}
+.aboutus-para{
+    padding-top: 20px;
+    color: white;
+    font-family: 'Montserrat', sans-serif; 
+}
+.careers{
+    grid-column-start: 3;
+    margin-top: 37px;
+}
+.careers-para{
+    padding-top: 20px;
+    font-family: 'Montserrat', sans-serif; 
+    color: white;
+}
+
+.rights-reserved{
+    grid-column-start: 4;
+
+}
+.footer-btn{
+    float: right;
+    margin-top: 50px;
+    margin-right: 230px;
+   
+}
+.request-invite-btn1{
+  
+    font-family: 'Montserrat', sans-serif;
+    background-image: linear-gradient(to left,#79cfcf, #32CD32);
+    
+    border-radius: 19px;
+    padding-right: 40px;
+    padding-left: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-color: transparent;
+    font-weight: bold;
+    color: white;
+}
+.request-invite-btn1:hover{
+    cursor: pointer;
+}
+.rights-para{
+    margin-top: 30px;
+  
+    color: var(--grayish);
+   
+    
+}
+
+
+
+
+
+html{
+    scroll-behavior: smooth;
+}
+@media(min-width: 992px){
+
+}
+@media(min-width: 768px)and(max-width: 991px){
+
+}
+@media(min-width: 575px)and(max-width: 767px){
+
+}
+@media(min-width: 480px)and(max-width: 574){
+
+}
+@media(max-width: 479px){
+
+}
+
+/* Original styles remain unchanged */
+
+/* Media Query for Desktop Screens */
+@media(min-width: 992px) {
+    .main-container {
+      width: 80%; /* Adjust container width for larger screens */
+      margin: 0 auto; /* Center the container */
+    }
+  
+    .nav ul {
+      margin-left: 20px; /* Adjust the left margin for navigation items */
+    }
+  
+    .intro {
+      grid-template-columns: 1fr 1fr; /* Adjust the grid columns for the introduction section */
+    }
+  
+    .next-gen-bank {
+      margin-left: 50px; /* Adjust the left margin for the next-gen-bank text */
+    }
+  
+    .next-gen-bank-p1 {
+      font-size: 36px; /* Adjust the font size for larger screens */
+      margin-right: 30px; /* Adjust the right margin */
+    }
+  
+    .next-gen-bank-btn {
+      margin-top: 30px; /* Adjust the top margin for the button */
+    }
+  
+    .why-choose-easybank-h2 {
+      margin-left: 50px; /* Adjust the left margin for the heading */
+    }
+  
+    .img-para {
+      margin-left: 20px; /* Adjust the left margin for the image paragraphs */
+    }
+  
+    .latest-h2 {
+      margin-left: 80px; /* Adjust the left margin for the latest articles heading */
+    }
+  
+    .card-container1 {
+      margin-left: 20px; /* Adjust the left margin for the card containers */
+    }
+  
+    .footer-brand-span {
+      margin-left: 50px; /* Adjust the left margin for the footer brand span */
+    }
+  
+    .footer-icons {
+      padding-left: 50px; /* Adjust the left padding for the footer icons */
+    }
+  
+    .aboutus,
+    .careers {
+      margin-top: 20px; /* Adjust the top margin for the aboutus and careers sections */
+    }
+  
+    .rights-reserved {
+      .footer-btn {
+        margin-right: 50px; /* Adjust the right margin for the footer button */
+      }
+    }
+  }
+  
